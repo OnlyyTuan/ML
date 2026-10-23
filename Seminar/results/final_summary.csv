@@ -1,8 +1,8 @@
 Phần,Chỉ số,Kết quả
-Online vs Batch,Throughput tăng khi batch lớn,"1305 → 13310 mẫu/s (x10.2, bs=4096)"
-Online vs Batch,Throughput khi xử lý 4096 mẫu: batch so với online (đo thật vòng lặp 4096 request),gấp 5.1x (không phải latency mỗi request)
-Online vs Batch,Lookup so với inference (bs=1),0.00020 ms so với 0.766 ms
-Compression,INT8: size / latency bs1,"4.0x nhỏ hơn / 3.7x nhanh hơn, accuracy 98.33% → 98.33%"
+Online vs Batch,Throughput tăng khi batch lớn,"881 → 10693 mẫu/s (x12.1, bs=4096)"
+Online vs Batch,Throughput khi xử lý 4096 mẫu: batch so với online (đo thật vòng lặp 4096 request),gấp 8.9x (không phải latency mỗi request)
+Online vs Batch,Lookup so với inference (bs=1),0.00030 ms so với 1.135 ms
+Compression,INT8: size / latency bs1,"4.0x nhỏ hơn / 3.6x nhanh hơn, accuracy 98.33% → 98.33%"
 Compression,Student distilled so với student tự học (25% nhãn),1255x ít tham số hơn teacher; accuracy 91.9% so với 92.8% (hiệu số ghép cặp -0.87 ± 0.27)
-Cloud/Edge,"ONNX RT (bật opt) so với PyTorch, bs=1",2.38x
-Cloud/Edge,Network RTT 100 ms so với inference,131x (network lớn hơn inference)
+Cloud/Edge,"ONNX RT (bật opt) so với PyTorch, bs=1",1.14x
+Cloud/Edge,Network RTT 100 ms so với inference,88x (network lớn hơn inference)
