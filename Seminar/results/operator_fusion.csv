@@ -1,0 +1,4 @@
+variant,time_ms_p50,speedup
+"Không fuse (3 vòng lặp, 2 mảng tạm)",57.85140000079991,1.0
+Chunked computation + tái sử dụng buffer,27.873600000020815,2.0754907870083774
+numexpr (1 luồng),40.77959999995073,1.418635788503806
