@@ -1,0 +1,9 @@
+MachineLearning/data/raw/*
+MachineLearning/data/processed/*
+MachineLearning/data/external/*
+!MachineLearning/data/**/.gitkeep
+MachineLearning/models/*
+!MachineLearning/models/.gitkeep
+__pycache__/
+.pytest_cache/
+.venv/
