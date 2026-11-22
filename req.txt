@@ -6,3 +6,6 @@ torch
 numexpr
 onnx 
 onnxruntime
+lightgbm
+xgboost
+seaborn
