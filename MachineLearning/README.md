@@ -5,7 +5,6 @@
 - **Input:** thông tin đơn hàng, sản phẩm, người bán, khách hàng, địa lý
 - **Output:** `delivery_days` – số ngày từ lúc đặt hàng đến khi khách nhận hàng
 - **Mô hình:** `HistGradientBoostingRegressor` (scikit-learn), loss MAE
-- **Baseline:** thời gian giao ước tính Olist hiển thị cho khách (`estimated_days`) và median của tập train
 
 ## Cấu trúc
 
@@ -16,8 +15,7 @@ MachineLearning/
 │   ├── processed/      # train.csv / val.csv / test.csv
 │   └── external/       # dữ liệu bổ sung
 ├── notebooks/
-│   ├── 01_eda.ipynb        # Khám phá dữ liệu (EDA)
-│   └── 02_baseline.ipynb   # Giai đoạn 1: baseline & kiểm tra dự đoán
+│   └── 01_eda.ipynb        # Khám phá dữ liệu (EDA)
 ├── src/
 │   ├── data_prep.py    # tiền xử lý, trích xuất đặc trưng, chia train/val/test
 │   ├── train.py        # huấn luyện, lưu models/delivery_model.joblib
@@ -48,8 +46,6 @@ Tải dataset từ Kaggle và giải nén 6 file sau vào `data/raw/`: `olist_or
 ```bash
 python -m src.data_prep
 ```
-Giai đoạn 1 – Baseline: mở và chạy `notebooks/02_baseline.ipynb`.
-
 ```bash
 python -m src.train
 ```
