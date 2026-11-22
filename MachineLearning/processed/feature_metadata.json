@@ -1,4 +1,5 @@
 {
+  "prediction_time": "purchase_time",
   "target_col": "delivery_time_days",
   "benchmark_col": "olist_estimated_days",
   "num_features": [
@@ -18,8 +19,6 @@
     "hour_cos",
     "month_sin",
     "month_cos",
-    "approval_delay_hours",
-    "prep_sla_days",
     "total_items",
     "total_price",
     "total_freight",
@@ -28,18 +27,20 @@
     "total_weight_g",
     "max_weight_g",
     "total_volume_cm3",
-    "volumetric_weight_g",
+    "missing_weight_count",
+    "missing_dimension_count",
     "avg_photos_qty",
     "freight_ratio",
     "price_per_item",
-    "freight_per_kg",
     "max_installments",
     "total_payment_value",
     "num_payment_methods",
     "primary_seller_id_te",
     "route_te",
     "customer_state_te",
-    "primary_category_te"
+    "primary_category_te",
+    "freight_per_kg",
+    "volumetric_weight_g"
   ],
   "cat_features": [
     "customer_state",
