@@ -2,10 +2,7 @@ numpy
 pandas
 matplotlib
 scikit-learn
-torch
-numexpr
-onnx 
-onnxruntime
+catboost
 lightgbm
 xgboost
 seaborn
