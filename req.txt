@@ -6,3 +6,4 @@ catboost
 lightgbm
 xgboost
 seaborn
+Optuna
