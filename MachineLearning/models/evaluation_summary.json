@@ -1,0 +1,49 @@
+{
+  "stratified_final": {
+    "model": "LightGBM (Optuna)",
+    "cv_roc_auc": 0.94539,
+    "oof_optimal_threshold": 0.4,
+    "test_metrics_050": {
+      "roc_auc": 0.95112,
+      "pr_auc": 0.92835,
+      "f1": 0.82863,
+      "precision": 0.84745,
+      "recall": 0.81063,
+      "accuracy": 0.87568,
+      "log_loss": 0.26585
+    },
+    "test_metrics_oof_opt": {
+      "roc_auc": 0.95112,
+      "pr_auc": 0.92835,
+      "f1": 0.83554,
+      "precision": 0.81057,
+      "recall": 0.8621,
+      "accuracy": 0.87417,
+      "log_loss": 0.26585
+    }
+  },
+  "oot_final": {
+    "model": "LightGBM (OOT Optuna)",
+    "oot_cutoff_arrival_date": "2017-05-01",
+    "cv_roc_auc": 0.95269,
+    "oof_optimal_threshold": 0.42,
+    "test_metrics_050": {
+      "roc_auc": 0.89447,
+      "pr_auc": 0.85329,
+      "f1": 0.73453,
+      "precision": 0.79516,
+      "recall": 0.68248,
+      "accuracy": 0.79984,
+      "log_loss": 0.39564
+    },
+    "test_metrics_oof_opt": {
+      "roc_auc": 0.89447,
+      "pr_auc": 0.85329,
+      "f1": 0.75237,
+      "precision": 0.76736,
+      "recall": 0.73794,
+      "accuracy": 0.8029,
+      "log_loss": 0.39564
+    }
+  }
+}

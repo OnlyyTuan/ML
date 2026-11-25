@@ -14,8 +14,6 @@
     "is_repeated_guest",
     "previous_cancellations",
     "previous_bookings_not_canceled",
-    "booking_changes",
-    "days_in_waiting_list",
     "adr",
     "required_car_parking_spaces",
     "total_of_special_requests",
@@ -23,16 +21,9 @@
     "has_company",
     "total_nights",
     "total_guests",
-    "has_children_or_babies",
-    "is_zero_nights",
     "weekend_ratio",
-    "room_type_changed",
     "total_previous_bookings",
     "prev_cancel_ratio",
-    "adr_per_person",
-    "estimated_total_revenue",
-    "has_special_requests",
-    "has_parking",
     "arrival_month_num",
     "arrival_month_sin",
     "arrival_month_cos"
@@ -43,7 +34,6 @@
     "market_segment",
     "distribution_channel",
     "reserved_room_type",
-    "assigned_room_type",
     "deposit_type",
     "customer_type"
   ],
@@ -52,35 +42,53 @@
     "agent",
     "company"
   ],
-  "oot_cutoff_date": "2017-05-01",
+  "dropped_leakage_cols": [
+    "reservation_status",
+    "reservation_status_date",
+    "assigned_room_type",
+    "booking_changes",
+    "days_in_waiting_list"
+  ],
+  "deferred_missing_cols": [
+    "children",
+    "total_guests"
+  ],
+  "split_policy": {
+    "stratified": "StratifiedGroupKFold(n_splits=5) grouped by feature fingerprint (0 overlap)",
+    "oot_cutoff_date": "2017-05-01",
+    "oot_basis": "arrival_date"
+  },
   "shapes": {
     "cleaned_total": [
-      86970,
-      46
+      119209,
+      36
     ],
     "train_strat": [
-      69576,
-      46
+      95367,
+      36
     ],
     "test_strat": [
-      17394,
-      46
+      23842,
+      36
     ],
     "train_oot": [
-      69295,
-      46
+      97032,
+      36
     ],
     "test_oot": [
-      17675,
-      46
+      22177,
+      36
     ]
   },
   "target_rates": {
-    "cleaned_total": 0.2731,
-    "train_strat": 0.2731,
-    "test_strat": 0.2731,
-    "train_oot": 0.2546,
-    "test_oot": 0.3455
+    "cleaned_total": 0.3708,
+    "train_strat": 0.3708,
+    "test_strat": 0.3708,
+    "train_oot": 0.3628,
+    "test_oot": 0.4057
   },
-  "train_test_exact_overlap": 0
+  "fingerprint_overlap": {
+    "stratified_train_test": 0,
+    "oot_train_test": 0
+  }
 }
