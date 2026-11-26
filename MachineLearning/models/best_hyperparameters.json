@@ -28,6 +28,11 @@
       "model": "CatBoost (Optuna)",
       "filename": "catboost_pipeline.joblib",
       "family": "catboost"
+    },
+    {
+      "model": "Decision Tree (Baseline)",
+      "filename": "decision_tree_pipeline.joblib",
+      "family": "dt"
     }
   ],
   "tuned_hyperparameters": {
