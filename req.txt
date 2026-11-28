@@ -7,3 +7,6 @@ lightgbm
 xgboost
 seaborn
 Optuna
+streamlit
+plotly
+fastapi uvicorn
